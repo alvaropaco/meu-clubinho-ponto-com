@@ -19,6 +19,26 @@ time, mark, audio, video {
 	outline: none;
 }
 
+@media (max-width: 768px) {
+    #nav ul {
+        display: block;
+    }
+    .slider-wrap {
+        margin: 0 auto;
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+    }
+    /* Adjust other elements accordingly */
+}
+
+.box {
+    width: 33.3333%; /* For a 3-column layout on desktop */
+    float: left;
+    padding: 15px;
+}
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -26,6 +46,8 @@ footer, header, hgroup, menu, nav, section {
 
 img {
 	vertical-align: middle;
+	max-width: 100%;
+    height: auto;
 }
 
 ol, ul {
